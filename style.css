@@ -3,5 +3,78 @@
 }
 
 .calc-cont {
-  margin: 10rem 25%;
+  margin: 6rem 25%;
+}
+.section-heading {
+  margin-bottom: 4rem;
+}
+/* label color */
+.input-field label {
+  color: #8e2de2;
+}
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type="text"].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 768px) {
+  .calc-cont {
+    margin: 6rem 15%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .calc-cont {
+    margin: 6rem 4rem;
+  }
+  .section-heading h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .calc-cont {
+    margin: 6rem 2rem;
+  }
+  .section-heading {
+    margin-bottom: 3rem;
+  }
+  .section-heading h2 {
+    font-size: 2.75rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .calc-cont {
+    margin: 6rem 1rem;
+  }
+  .section-heading h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .section-heading h2 {
+    font-size: 2rem;
+  }
 }
