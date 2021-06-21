@@ -35,6 +35,16 @@
 .input-field .prefix.active {
   color: #000;
 }
+.warning-msg {
+  display: none;
+  background-color: #d32f2f;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+.warning-msg p {
+  font-size: 1.25rem;
+}
 
 @media only screen and (max-width: 1200px) {
 }

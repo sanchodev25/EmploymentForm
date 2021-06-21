@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equi v="X-UA-Compatible" content="ie=edge" />
+    <title>Employee Form</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,44 +15,48 @@
         <div class="emp-calc">
           <div class="row">
             <div class="section-heading">
-              <h2 class="center-align">Employee Calculator</h2>
+              <h2 class="center-align">Employee Hours Form</h2>
+            </div>
+            <div class="warning-msg col s12">
+              <h5>INVALID INPUT!</H5>
+              <p>Please enter a:</p>
             </div>
             <form id="emp-form" class="col s12">
               <div class="row">
                 <div class="input-field col s12 m6">
-                  <input id="first_name" type="text" class="validate">
+                  <input id="first_name" type="text">
                   <label for="first_name">First Name</label>
                 </div>
                 <div class="input-field col s12 m6">
-                  <input id="last_name" type="text" class="validate">
+                  <input id="last_name"  type="text">
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12 m6">
-                  <input placeholder="Enter your hourly pay" id="pay_rate" type="text" class="validate">
+                  <input placeholder="Enter your hourly pay" id="pay_rate" type="text">
                   <label for="pay_rate">Pay Rate</label>
                 </div>
                 <div class="input-field col s12 m6">
-                  <input placeholder="Hours worked this week" id="hours" type="text" class="validate">
+                  <input placeholder="Hours worked this week" id="hours" type="text">
                   <label for="hours">Hours</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12 m6">
-                  <input placeholder="Enter overtime hours" id="overtime" type="text" class="validate">
+                  <input placeholder="Enter overtime hours" id="overtime" type="text">
                   <label for="pay_rate">Overtime Hours</label>
                 </div>
               </div>
               <div class="row">
-                <div class="col s12">
+                <div class="col s6">
                   <button class="btn waves-effect waves-light waves-purple" type="submit" id="submit">Submit
                     <i class="material-icons right">send</i>
                   </button>
                 </div>
-                <div class="col s12">
-                  <button class="btn waves-effect waves-light waves-purple" id="reset_val">Clear Values
-                    <i class="material-icons right">send</i>
+                <div class="col s6">
+                  <button class="btn waves-effect waves-light purple darken-1" id="reset_val">Clear Values
+                    <i class="material-icons right">clear_all</i>
                   </button>
                 </div>
               </div>
@@ -59,14 +64,14 @@
                 <div class="col s12">
                   Gross Pay:
                   <div class="input-field inline">
-                    <input disabled value=" " id="gross_pay" type="text" class="validate">
+                    <input disabled value=" " id="gross_pay" type="text">
                     
                   </div>
                 </div>
                 <div class="col s12">
                   Net Pay:
                   <div class="input-field inline">
-                    <input disabled value=" " id="net_pay" type="text" class="validate">
+                    <input disabled value=" " id="net_pay" type="text" >
                   </div>
                 </div>
               </div>
