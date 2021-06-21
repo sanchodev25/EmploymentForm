@@ -16,7 +16,7 @@
             <div class="section-heading">
               <h2 class="center-align">Employee Calculator</h2>
             </div>
-            <form class="col s12">
+            <form id="emp-form" class="col s12">
               <div class="row">
                 <div class="input-field col s12 m6">
                   <input id="first_name" type="text" class="validate">
@@ -45,7 +45,12 @@
               </div>
               <div class="row">
                 <div class="col s12">
-                  <button class="btn waves-effect waves-light waves-purple" type="submit" name="action">Submit
+                  <button class="btn waves-effect waves-light waves-purple" type="submit" id="submit">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+                <div class="col s12">
+                  <button class="btn waves-effect waves-light waves-purple" id="reset_val">Clear Values
                     <i class="material-icons right">send</i>
                   </button>
                 </div>
